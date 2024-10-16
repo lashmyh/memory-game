@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+*{
+  font-family: "Press Start 2P", sans-serif;
+}
+
+
+.App {
+  max-width: 860px;
+  margin: 40px auto;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-right: 40px;
+  gap: 30px;
+  font-size: 1rem;
+}
+
+.scores {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.score, .highestScore {
+  background-color: #5479cf;
+  padding: 10px 10px;
+  border-radius: 5px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 0.7em;
+  padding: 20px;
+  /* width: 100%; */
+}
+
+.card {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  max-width: 170px;
+  height: 200px;
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+
+
+}
+
+.game-over {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 15%;
+  
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+}
+
+button:hover {
+  filter: brightness(1.2);
+  cursor: pointer;
+}
